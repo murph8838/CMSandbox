@@ -6,6 +6,9 @@ buildscript {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.3.RELEASE")
     }
 }
+plugins {
+    id 'pl.allegro.tech.build.axion-release' version '1.4.1'
+}
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
@@ -28,3 +31,11 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
+
+scmVersion {
+    tag {
+        prefix = 'SpringRestApp'
+    }
+}
+
+project.version = scmVersion.version
