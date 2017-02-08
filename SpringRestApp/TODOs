@@ -1,0 +1,6 @@
+Axion release plugin
+Setup jenkins to deploy locally
+Implement service registration/discovery?
+   - Create second service and set service1 up as a provider for service2
+   - deploy a service registration server/app
+   - set up both services to register with the registration server
