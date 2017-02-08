@@ -46,3 +46,4 @@ scmVersion {
 project.version = scmVersion.version
 
 print project.rootProject.file("..")
+print "testMe"
