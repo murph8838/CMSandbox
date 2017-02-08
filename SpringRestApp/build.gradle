@@ -36,6 +36,11 @@ scmVersion {
     tag {
         prefix = 'SpringRestApp'
     }
+    
+    repository {
+        type = 'git'
+        directory = project.rootProject.file('..') // repository location
+	}
 }
 
 project.version = scmVersion.version
