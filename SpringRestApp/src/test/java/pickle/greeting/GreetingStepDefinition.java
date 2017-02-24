@@ -7,6 +7,7 @@ import org.springframework.web.client.RestTemplate;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import cucumber.api.java.en_lol.ICANHAZ;
 import hello.Greeting;
 import pickle.BaseStepDefinition;
 
@@ -15,7 +16,7 @@ public class GreetingStepDefinition extends BaseStepDefinition {
 	public static final String GREETINGS_URL = "http://localhost:8081/greeting";
 	public static final String INPUT = "input";
 	public static final String RESULT = "result";
-
+	
 	@Given("^an input of ([^\"]*)$")
 	public void an_input_of(String name) {
 		addValue(INPUT, name);
