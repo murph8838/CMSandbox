@@ -1,4 +1,5 @@
 TODO:
+	Setup cucumber testing
 	Setup jenkins to deploy locally
 	Implement service registration/discovery?
 	   - Create second service and set service1 up as a provider for service2

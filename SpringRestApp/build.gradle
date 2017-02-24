@@ -33,6 +33,9 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
+    testCompile('info.cukes:cucumber-java:1.2.5')
+    testCompile('info.cukes:cucumber-junit:1.2.5')
+    testCompile('info.cukes:cucumber-picocontainer:1.2.5')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
